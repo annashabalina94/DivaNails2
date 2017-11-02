@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pek-D6-VD5" id="reC-Y4-yme">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="82.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCY-ja-V0h">
@@ -135,6 +135,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGp-Tb-JV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1440.8" y="125.4872563718141"/>
+        </scene>
+        <!--Large Image View Controller-->
+        <scene sceneID="VfM-Rl-2if">
+            <objects>
+                <viewController storyboardIdentifier="LargeImageViewController" id="wcJ-CY-ua5" customClass="LargeImageViewController" customModule="DivaNails2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFo-ww-fr5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-vj-Bcz">
+                                <rect key="frame" x="16" y="74" width="343" height="499"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI8-mb-kNY">
+                                <rect key="frame" x="74" y="589" width="245" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-00-oZ3">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XDA-Ht-P6A"/>
+                                    <constraint firstAttribute="width" constant="46" id="khf-HL-XWJ"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="wcJ-CY-ua5" eventType="touchUpInside" id="Rqa-Xe-bz6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ggD-00-oZ3" firstAttribute="top" secondItem="7Nd-U5-3a3" secondAttribute="top" id="60g-0l-yjd"/>
+                            <constraint firstItem="ggD-00-oZ3" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="16" id="97K-hL-Nna"/>
+                            <constraint firstItem="XI8-mb-kNY" firstAttribute="top" secondItem="SUP-vj-Bcz" secondAttribute="bottom" constant="16" id="Guc-oQ-4EA"/>
+                            <constraint firstItem="7Nd-U5-3a3" firstAttribute="trailing" secondItem="SUP-vj-Bcz" secondAttribute="trailing" constant="16" id="Q5w-G9-fAI"/>
+                            <constraint firstItem="SUP-vj-Bcz" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="16" id="Yc6-Xg-WAd"/>
+                            <constraint firstItem="SUP-vj-Bcz" firstAttribute="top" secondItem="ggD-00-oZ3" secondAttribute="bottom" constant="24" id="pdu-zt-SEv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Nd-U5-3a3"/>
+                    </view>
+                    <connections>
+                        <outlet property="largeImage" destination="SUP-vj-Bcz" id="ghy-yV-Fg0"/>
+                        <outlet property="linkLabel" destination="XI8-mb-kNY" id="PIw-m5-3Dd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndv-lD-5dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.8000000000002" y="110.19490254872565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dcj-3X-pzG">

@@ -40,7 +40,7 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
             do
             {
                 let decoder = JSONDecoder()
-                let downloadedImage = try decoder.decode([Images].self, from: data)
+                let downloadedImage = try decoder.decode([Images].self, from: data)//fail
                 self.image = downloadedImage
                 DispatchQueue.main.async
                     {
@@ -56,11 +56,10 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return image.count
     }
-    
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
@@ -83,5 +82,15 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
                 }
         }
         return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LargeImageViewController") as! LargeImageViewController
+        vc.limage = UIImage(named: self.image[indexPath.row].large)!
+        vc.linkText = self.image[indexPath.row].description //had to be chanched to link
+        self.present(vc, animated: true, completion: nil) 
     }
 }

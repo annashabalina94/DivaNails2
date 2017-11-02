@@ -19,6 +19,7 @@
 		7511B5F01FA866880056A115 /* CategoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5EF1FA866880056A115 /* CategoryCellTableViewCell.swift */; };
 		75542F091FA92A8C006D1C70 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */; };
 		75542F0B1FA92BCB006D1C70 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */; };
+		757F922E1FAAB77A00E205E3 /* LargeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757F922D1FAAB77A00E205E3 /* LargeImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7511B5EF1FA866880056A115 /* CategoryCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellTableViewCell.swift; sourceTree = "<group>"; };
 		75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		757F922D1FAAB77A00E205E3 /* LargeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				7511B5BB1FA863AA0056A115 /* ViewController.swift */,
 				75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */,
 				75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */,
+				757F922D1FAAB77A00E205E3 /* LargeImageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				75542F0B1FA92BCB006D1C70 /* ImageViewController.swift in Sources */,
 				7511B5F01FA866880056A115 /* CategoryCellTableViewCell.swift in Sources */,
 				7511B5BA1FA863AA0056A115 /* AppDelegate.swift in Sources */,
+				757F922E1FAAB77A00E205E3 /* LargeImageViewController.swift in Sources */,
 				7511B5EA1FA865610056A115 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

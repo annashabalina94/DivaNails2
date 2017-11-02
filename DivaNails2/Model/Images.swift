@@ -13,12 +13,14 @@ class Images: Codable
     let small: String
     let large: String
     let description: String
+    let link: String
     
-    init (small: String, large: String, description: String)
+    init (small: String, large: String, description: String, link: String)
     {
         self.small = small
         self.large = large
         self.description = description
+        self.link = link
     }
 
 }
