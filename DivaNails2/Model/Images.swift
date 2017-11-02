@@ -8,6 +8,17 @@
 
 import UIKit
 
-class Images: NSObject {
+class Images: Codable
+{
+    let small: String
+    let large: String
+    let description: String
+    
+    init (small: String, large: String, description: String)
+    {
+        self.small = small
+        self.large = large
+        self.description = description
+    }
 
 }

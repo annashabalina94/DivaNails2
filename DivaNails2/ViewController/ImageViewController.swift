@@ -8,28 +8,80 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    let url = URL(string: "http://13.82.186.151:4040/photos/1")
+    private var image = [Images]()
 
-    override func viewDidLoad() {
+    @IBOutlet var collectionView: UICollectionView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        downloadJson()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func downloadJson()
+    {
+        guard let downloadURL = url else { return }
+        URLSession.shared.dataTask(with: downloadURL)
+        { data, URLResponse, error in
+            guard let data = data, error == nil, URLResponse != nil else
+            {
+                print("Something is wrong")
+                return
+            }
+            print("downloaded")
+            do
+            {
+                let decoder = JSONDecoder()
+                let downloadedImage = try decoder.decode([Images].self, from: data)
+                self.image = downloadedImage
+                DispatchQueue.main.async
+                    {
+                    self.collectionView.reloadData()
+                    }
+            }
+            catch
+            {
+                print("Something wrong after downloading")
+            }
+        }.resume()
+        
     }
-    */
-
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return image.count
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCollectionViewCell
+        
+        if let imageURL = URL(string: self.image[indexPath.row].small)
+        {
+            DispatchQueue.global().async
+                {
+                    let data = try? Data(contentsOf: imageURL)
+                    if let data = data
+                        {
+                          let image = UIImage (data: data)
+                        DispatchQueue.main.async
+                            {
+                                  cell.ImageCellView.image = image
+                            }
+                        }
+                }
+        }
+        return cell
+    }
 }

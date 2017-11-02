@@ -8,6 +8,14 @@
 
 import UIKit
 
-class Category: NSObject {
-
+class Category: Codable
+{
+    let categoryId: String
+    let name: String
+    
+    init(categoryId: String, name: String)
+    {
+        self.categoryId=categoryId
+        self.name = name
+    }
 }

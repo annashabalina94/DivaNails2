@@ -10,6 +10,8 @@ import UIKit
 
 class CategoryCellTableViewCell: UITableViewCell {
 
+    @IBOutlet var ColorLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

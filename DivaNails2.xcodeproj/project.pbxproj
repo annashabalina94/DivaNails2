@@ -14,6 +14,11 @@
 		7511B5C41FA863AA0056A115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7511B5C21FA863AA0056A115 /* LaunchScreen.storyboard */; };
 		7511B5CF1FA863AA0056A115 /* DivaNails2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5CE1FA863AA0056A115 /* DivaNails2Tests.swift */; };
 		7511B5DA1FA863AA0056A115 /* DivaNails2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5D91FA863AA0056A115 /* DivaNails2UITests.swift */; };
+		7511B5EA1FA865610056A115 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5E91FA865610056A115 /* Category.swift */; };
+		7511B5EC1FA865AD0056A115 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5EB1FA865AD0056A115 /* Images.swift */; };
+		7511B5F01FA866880056A115 /* CategoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511B5EF1FA866880056A115 /* CategoryCellTableViewCell.swift */; };
+		75542F091FA92A8C006D1C70 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */; };
+		75542F0B1FA92BCB006D1C70 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		7511B5D51FA863AA0056A115 /* DivaNails2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivaNails2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511B5D91FA863AA0056A115 /* DivaNails2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivaNails2UITests.swift; sourceTree = "<group>"; };
 		7511B5DB1FA863AA0056A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7511B5E91FA865610056A115 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7511B5EB1FA865AD0056A115 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7511B5EF1FA866880056A115 /* CategoryCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellTableViewCell.swift; sourceTree = "<group>"; };
+		75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,9 @@
 		7511B5B81FA863AA0056A115 /* DivaNails2 */ = {
 			isa = PBXGroup;
 			children = (
+				7511B5E71FA864BD0056A115 /* Model */,
+				7511B5E81FA865050056A115 /* ViewController */,
 				7511B5B91FA863AA0056A115 /* AppDelegate.swift */,
-				7511B5BB1FA863AA0056A115 /* ViewController.swift */,
 				7511B5BD1FA863AA0056A115 /* Main.storyboard */,
 				7511B5C01FA863AA0056A115 /* Assets.xcassets */,
 				7511B5C21FA863AA0056A115 /* LaunchScreen.storyboard */,
@@ -123,6 +134,26 @@
 				7511B5DB1FA863AA0056A115 /* Info.plist */,
 			);
 			path = DivaNails2UITests;
+			sourceTree = "<group>";
+		};
+		7511B5E71FA864BD0056A115 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7511B5E91FA865610056A115 /* Category.swift */,
+				7511B5EB1FA865AD0056A115 /* Images.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7511B5E81FA865050056A115 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7511B5EF1FA866880056A115 /* CategoryCellTableViewCell.swift */,
+				7511B5BB1FA863AA0056A115 /* ViewController.swift */,
+				75542F081FA92A8C006D1C70 /* ImageCollectionViewCell.swift */,
+				75542F0A1FA92BCB006D1C70 /* ImageViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7511B5BC1FA863AA0056A115 /* ViewController.swift in Sources */,
+				7511B5EC1FA865AD0056A115 /* Images.swift in Sources */,
+				75542F091FA92A8C006D1C70 /* ImageCollectionViewCell.swift in Sources */,
+				75542F0B1FA92BCB006D1C70 /* ImageViewController.swift in Sources */,
+				7511B5F01FA866880056A115 /* CategoryCellTableViewCell.swift in Sources */,
 				7511B5BA1FA863AA0056A115 /* AppDelegate.swift in Sources */,
+				7511B5EA1FA865610056A115 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
