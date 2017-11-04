@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ImageViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+class ImageViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate
+{
     
     let url = URL(string: "http://13.82.186.151:4040/photos/1")
     private var image = [Images]()
@@ -47,7 +48,7 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
                     self.collectionView.reloadData()
                     }
             }
-            catch
+                catch
             {
                 print("Something wrong after downloading")
             }
@@ -89,7 +90,10 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LargeImageViewController") as! LargeImageViewController
-        vc.limage = UIImage(named: self.image[indexPath.row].large)!
+        
+        let url = URL(string: self.image[indexPath.row].large)
+        let data = try? Data(contentsOf: url!)
+        vc.limage = UIImage(data: data!)!
         vc.linkText = self.image[indexPath.row].description //had to be chanched to link
         self.present(vc, animated: true, completion: nil) 
     }

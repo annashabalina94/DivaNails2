@@ -34,7 +34,8 @@ class ViewController: UIViewController, UITableViewDataSource
     {
         guard let downloadURL = url else { return }
         URLSession.shared.dataTask(with: downloadURL){ data, URLResponse, error in
-            guard let data = data, error == nil, URLResponse != nil else
+            guard let data = data, error == nil, URLResponse != nil
+                else
             {
                 print("Something is wrong")
                 return
