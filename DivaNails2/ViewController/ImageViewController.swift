@@ -11,19 +11,20 @@ import UIKit
 class ImageViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate
 {
     
-    let url = URL(string: "http://13.82.186.151:4040/photos/1")
+    var url = URL(string: "")
     private var image = [Images]()
 
     @IBOutlet var collectionView: UICollectionView!
+    var id: String = ""
     
     override func viewDidLoad()
     {
-        super.viewDidLoad()
-
-        collectionView.delegate = self
-        collectionView.dataSource = self
         
+        super.viewDidLoad()
+        // start to read categoryId
+        url = URL(string: "http://13.82.186.151:4040/photos/\(id)")
         downloadJson()
+        
     }
     
     
@@ -41,7 +42,7 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
             do
             {
                 let decoder = JSONDecoder()
-                let downloadedImage = try decoder.decode([Images].self, from: data)//fail
+                let downloadedImage = try decoder.decode([Images].self, from: data)
                 self.image = downloadedImage
                 DispatchQueue.main.async
                     {

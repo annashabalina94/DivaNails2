@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource
         downloadJson()
         tableView.tableFooterView = UIView()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning()
@@ -60,16 +61,37 @@ class ViewController: UIViewController, UITableViewDataSource
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return category.count
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") as? CategoryCellTableViewCell else { return UITableViewCell()}
         
         cell.ColorLabel.text = category[indexPath.row].name
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)/////////
+    {
+        print("User tapped on item \(indexPath.row)")
+        //let vc = ImageViewController(nibName: "ImageViewController", bundle: nil)
+        //print("Image url = \(categoryUrlString)")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            if segue.destination is ImageViewController
+            {
+                let vc = segue.destination as? ImageViewController
+                vc?.id = self.category[indexPath.row].categoryId
+            }
+        }
+    }
+    
 }
 

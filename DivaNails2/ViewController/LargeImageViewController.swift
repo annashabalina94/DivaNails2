@@ -19,22 +19,32 @@ class LargeImageViewController: UIViewController, UIScrollViewDelegate
     var linkText = String()
     var limage = UIImage()
    
-   
+    @IBAction func userDoubleTappedScrollview(_ sender: UITapGestureRecognizer)
+    {
+        // Want to zoom in and zoom out animation
+        //print("Tapped")
+        
+        
+    }
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         linkLabel.text = linkText
         largeImage.image = limage
-        
-        
+       
     }
     
     @IBAction func back(_ sender: UIButton)
     {
        _ = self.dismiss(animated: true, completion: nil)
     }
+
     
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView?
+    {
+        
         return self.largeImage
     }
     

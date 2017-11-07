@@ -15,7 +15,7 @@ class Category: Codable
     
     init(categoryId: String, name: String)
     {
-        self.categoryId=categoryId
+        self.categoryId = categoryId
         self.name = name
     }
 }

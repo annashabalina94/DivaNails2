@@ -155,9 +155,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-vj-Bcz">
-                                <rect key="frame" x="16" y="74" width="343" height="514.5"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" maximumZoomScale="6" translatesAutoresizingMaskIntoConstraints="NO" id="1Th-Ip-sMj">
+                                <rect key="frame" x="16" y="74" width="343" height="515"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-vj-Bcz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="514.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="MdH-No-j4C" appends="YES" id="DyX-4C-4EE"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="wcJ-CY-ua5" id="QKy-8n-r63"/>
+                                </connections>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI8-mb-kNY">
                                 <rect key="frame" x="74" y="604.5" width="245" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -177,27 +191,15 @@
                                     <action selector="back:" destination="wcJ-CY-ua5" eventType="touchUpInside" id="Rqa-Xe-bz6"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Th-Ip-sMj">
-                                <rect key="frame" x="16" y="74" width="343" height="515"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <outlet property="delegate" destination="wcJ-CY-ua5" id="QKy-8n-r63"/>
-                                </connections>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ggD-00-oZ3" firstAttribute="top" secondItem="7Nd-U5-3a3" secondAttribute="top" id="60g-0l-yjd"/>
                             <constraint firstItem="ggD-00-oZ3" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="16" id="97K-hL-Nna"/>
-                            <constraint firstItem="XI8-mb-kNY" firstAttribute="top" secondItem="SUP-vj-Bcz" secondAttribute="bottom" constant="16" id="Guc-oQ-4EA"/>
                             <constraint firstItem="ggD-00-oZ3" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="16" id="KIo-JE-tXe"/>
-                            <constraint firstItem="XI8-mb-kNY" firstAttribute="top" secondItem="SUP-vj-Bcz" secondAttribute="bottom" constant="16" id="LFz-oP-iYZ"/>
-                            <constraint firstItem="7Nd-U5-3a3" firstAttribute="trailing" secondItem="SUP-vj-Bcz" secondAttribute="trailing" constant="16" id="Q5w-G9-fAI"/>
-                            <constraint firstItem="SUP-vj-Bcz" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="16" id="Yc6-Xg-WAd"/>
                             <constraint firstItem="7Nd-U5-3a3" firstAttribute="trailing" secondItem="XI8-mb-kNY" secondAttribute="trailing" constant="56" id="Z2A-IL-ifR"/>
                             <constraint firstItem="7Nd-U5-3a3" firstAttribute="bottom" secondItem="XI8-mb-kNY" secondAttribute="bottom" constant="42" id="e1q-cS-HKF"/>
                             <constraint firstItem="XI8-mb-kNY" firstAttribute="leading" secondItem="7Nd-U5-3a3" secondAttribute="leading" constant="74" id="moM-m9-vv1"/>
-                            <constraint firstItem="SUP-vj-Bcz" firstAttribute="top" secondItem="ggD-00-oZ3" secondAttribute="bottom" constant="24" id="pdu-zt-SEv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Nd-U5-3a3"/>
                     </view>
@@ -208,6 +210,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndv-lD-5dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MdH-No-j4C">
+                    <connections>
+                        <action selector="userDoubleTappedScrollview:" destination="wcJ-CY-ua5" id="lPn-wy-fOK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2036" y="115.59220389805098"/>
         </scene>
