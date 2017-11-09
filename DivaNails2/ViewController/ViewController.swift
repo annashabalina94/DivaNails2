@@ -25,16 +25,18 @@ class ViewController: UIViewController, UITableViewDataSource
         
     }
 
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     func downloadJson()
     {
         guard let downloadURL = url else { return }
-        URLSession.shared.dataTask(with: downloadURL){ data, URLResponse, error in
+        URLSession.shared.dataTask(with: downloadURL) { data, URLResponse, error in
             guard let data = data, error == nil, URLResponse != nil
                 else
             {
@@ -49,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource
                 self.category = downloadedCategory
                 DispatchQueue.main.async
                     {
-                    self.tableView.reloadData()
+                        self.tableView.reloadData()
                     }
             }
             catch
@@ -57,7 +59,6 @@ class ViewController: UIViewController, UITableViewDataSource
                 print("Something wrong after downloading")
             }
             }.resume()
-        
     }
     
     
@@ -75,6 +76,7 @@ class ViewController: UIViewController, UITableViewDataSource
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)/////////
     {
         print("User tapped on item \(indexPath.row)")
@@ -82,9 +84,11 @@ class ViewController: UIViewController, UITableViewDataSource
         //print("Image url = \(categoryUrlString)")
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if let indexPath = tableView.indexPathForSelectedRow {
+        if let indexPath = tableView.indexPathForSelectedRow
+        {
             if segue.destination is ImageViewController
             {
                 let vc = segue.destination as? ImageViewController

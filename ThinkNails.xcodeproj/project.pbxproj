@@ -40,17 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7511B5B61FA863AA0056A115 /* DivaNails2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DivaNails2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511B5B61FA863AA0056A115 /* ThinkNails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkNails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511B5B91FA863AA0056A115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7511B5BB1FA863AA0056A115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7511B5BE1FA863AA0056A115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7511B5C01FA863AA0056A115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7511B5C31FA863AA0056A115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7511B5C51FA863AA0056A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511B5CA1FA863AA0056A115 /* DivaNails2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivaNails2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511B5CA1FA863AA0056A115 /* ThinkNailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkNailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511B5CE1FA863AA0056A115 /* DivaNails2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivaNails2Tests.swift; sourceTree = "<group>"; };
 		7511B5D01FA863AA0056A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511B5D51FA863AA0056A115 /* DivaNails2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivaNails2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511B5D51FA863AA0056A115 /* ThinkNailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkNailsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511B5D91FA863AA0056A115 /* DivaNails2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivaNails2UITests.swift; sourceTree = "<group>"; };
 		7511B5DB1FA863AA0056A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511B5E91FA865610056A115 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 		7511B5B71FA863AA0056A115 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7511B5B61FA863AA0056A115 /* DivaNails2.app */,
-				7511B5CA1FA863AA0056A115 /* DivaNails2Tests.xctest */,
-				7511B5D51FA863AA0056A115 /* DivaNails2UITests.xctest */,
+				7511B5B61FA863AA0056A115 /* ThinkNails.app */,
+				7511B5CA1FA863AA0056A115 /* ThinkNailsTests.xctest */,
+				7511B5D51FA863AA0056A115 /* ThinkNailsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7511B5B51FA863AA0056A115 /* DivaNails2 */ = {
+		7511B5B51FA863AA0056A115 /* ThinkNails */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511B5DE1FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2" */;
+			buildConfigurationList = 7511B5DE1FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNails" */;
 			buildPhases = (
 				7511B5B21FA863AA0056A115 /* Sources */,
 				7511B5B31FA863AA0056A115 /* Frameworks */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = DivaNails2;
+			name = ThinkNails;
 			productName = DivaNails2;
-			productReference = 7511B5B61FA863AA0056A115 /* DivaNails2.app */;
+			productReference = 7511B5B61FA863AA0056A115 /* ThinkNails.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7511B5C91FA863AA0056A115 /* DivaNails2Tests */ = {
+		7511B5C91FA863AA0056A115 /* ThinkNailsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511B5E11FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2Tests" */;
+			buildConfigurationList = 7511B5E11FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNailsTests" */;
 			buildPhases = (
 				7511B5C61FA863AA0056A115 /* Sources */,
 				7511B5C71FA863AA0056A115 /* Frameworks */,
@@ -192,14 +192,14 @@
 			dependencies = (
 				7511B5CC1FA863AA0056A115 /* PBXTargetDependency */,
 			);
-			name = DivaNails2Tests;
+			name = ThinkNailsTests;
 			productName = DivaNails2Tests;
-			productReference = 7511B5CA1FA863AA0056A115 /* DivaNails2Tests.xctest */;
+			productReference = 7511B5CA1FA863AA0056A115 /* ThinkNailsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7511B5D41FA863AA0056A115 /* DivaNails2UITests */ = {
+		7511B5D41FA863AA0056A115 /* ThinkNailsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511B5E41FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2UITests" */;
+			buildConfigurationList = 7511B5E41FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNailsUITests" */;
 			buildPhases = (
 				7511B5D11FA863AA0056A115 /* Sources */,
 				7511B5D21FA863AA0056A115 /* Frameworks */,
@@ -210,9 +210,9 @@
 			dependencies = (
 				7511B5D71FA863AA0056A115 /* PBXTargetDependency */,
 			);
-			name = DivaNails2UITests;
+			name = ThinkNailsUITests;
 			productName = DivaNails2UITests;
-			productReference = 7511B5D51FA863AA0056A115 /* DivaNails2UITests.xctest */;
+			productReference = 7511B5D51FA863AA0056A115 /* ThinkNailsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7511B5B11FA863AA0056A115 /* Build configuration list for PBXProject "DivaNails2" */;
+			buildConfigurationList = 7511B5B11FA863AA0056A115 /* Build configuration list for PBXProject "ThinkNails" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,9 +254,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7511B5B51FA863AA0056A115 /* DivaNails2 */,
-				7511B5C91FA863AA0056A115 /* DivaNails2Tests */,
-				7511B5D41FA863AA0056A115 /* DivaNails2UITests */,
+				7511B5B51FA863AA0056A115 /* ThinkNails */,
+				7511B5C91FA863AA0056A115 /* ThinkNailsTests */,
+				7511B5D41FA863AA0056A115 /* ThinkNailsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,12 +325,12 @@
 /* Begin PBXTargetDependency section */
 		7511B5CC1FA863AA0056A115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7511B5B51FA863AA0056A115 /* DivaNails2 */;
+			target = 7511B5B51FA863AA0056A115 /* ThinkNails */;
 			targetProxy = 7511B5CB1FA863AA0056A115 /* PBXContainerItemProxy */;
 		};
 		7511B5D71FA863AA0056A115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7511B5B51FA863AA0056A115 /* DivaNails2 */;
+			target = 7511B5B51FA863AA0056A115 /* ThinkNails */;
 			targetProxy = 7511B5D61FA863AA0056A115 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DivaNails2.app/DivaNails2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkNails.app/ThinkNails";
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DivaNails2.app/DivaNails2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkNails.app/ThinkNails";
 			};
 			name = Release;
 		};
@@ -557,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7511B5B11FA863AA0056A115 /* Build configuration list for PBXProject "DivaNails2" */ = {
+		7511B5B11FA863AA0056A115 /* Build configuration list for PBXProject "ThinkNails" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511B5DC1FA863AA0056A115 /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511B5DE1FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2" */ = {
+		7511B5DE1FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNails" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511B5DF1FA863AA0056A115 /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511B5E11FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2Tests" */ = {
+		7511B5E11FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNailsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511B5E21FA863AA0056A115 /* Debug */,
@@ -584,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511B5E41FA863AA0056A115 /* Build configuration list for PBXNativeTarget "DivaNails2UITests" */ = {
+		7511B5E41FA863AA0056A115 /* Build configuration list for PBXNativeTarget "ThinkNailsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511B5E51FA863AA0056A115 /* Debug */,
