@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,45 +8,25 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AcademyEngraved.ttf">
-            <string>AcademyEngravedLetPlain</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a26d75d61bee53cd37814e091a4fa350--iphone-s-wallpaper-wallpapers-android" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-Rv-DUc">
-                                <rect key="frame" x="0.0" y="357" width="768" height="667"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="aUb-F8-5dr"/>
-                                    <constraint firstAttribute="height" constant="667" id="aoH-an-EuP"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LS" translatesAutoresizingMaskIntoConstraints="NO" id="IDz-bJ-adb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kJ-pc-Sys">
-                                <rect key="frame" x="78" y="276" width="611" height="425"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2kJ-pc-Sys" secondAttribute="trailing" constant="79" id="9LU-Cp-b9C"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2kJ-pc-Sys" secondAttribute="bottom" constant="323" id="AcP-rw-IlC"/>
-                            <constraint firstItem="Eb4-Rv-DUc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GeG-Q1-0MJ"/>
-                            <constraint firstItem="Eb4-Rv-DUc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NPG-sh-LVo"/>
-                            <constraint firstItem="2kJ-pc-Sys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="NYY-qQ-o02"/>
-                            <constraint firstItem="Eb4-Rv-DUc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aRh-ao-C6O"/>
-                            <constraint firstItem="Eb4-Rv-DUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cKt-3U-pTm"/>
-                            <constraint firstItem="2kJ-pc-Sys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="256" id="jj7-9S-3s5"/>
+                            <constraint firstItem="IDz-bJ-adb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5SD-WP-wOQ"/>
+                            <constraint firstItem="IDz-bJ-adb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Wzh-pd-Un8"/>
+                            <constraint firstItem="IDz-bJ-adb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gfK-7m-0Jp"/>
+                            <constraint firstItem="IDz-bJ-adb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="m5i-hh-nxn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -57,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a26d75d61bee53cd37814e091a4fa350--iphone-s-wallpaper-wallpapers-android" width="640" height="1136"/>
+        <image name="LS" width="497" height="800"/>
     </resources>
 </document>

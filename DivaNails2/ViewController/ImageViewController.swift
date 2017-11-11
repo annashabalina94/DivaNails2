@@ -26,7 +26,7 @@ class ImageViewController: UIViewController,UICollectionViewDataSource, UICollec
             url = URL(string: "http://13.82.186.151:4040/photos/\(id)")
             downloadJson()
         
-        }
+        }    
     
     
     func downloadJson()
